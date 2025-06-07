@@ -1,4 +1,4 @@
-package Questao2;
+package Banco;
 
 public class Questao2EstudoDeCaso1{
     public static void main(String[] args){

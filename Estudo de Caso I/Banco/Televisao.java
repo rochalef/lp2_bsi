@@ -1,4 +1,4 @@
-package Questao2;
+package Banco;
 
 public class Televisao{
 

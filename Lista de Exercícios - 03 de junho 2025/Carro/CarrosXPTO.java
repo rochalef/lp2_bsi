@@ -1,4 +1,4 @@
-package Questao1;
+package Carro;
 
 import java.util.Scanner;
 

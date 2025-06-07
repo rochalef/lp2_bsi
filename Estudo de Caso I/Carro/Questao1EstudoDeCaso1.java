@@ -1,4 +1,4 @@
-package Questao1;
+package Carro;
 
 public class Questao1EstudoDeCaso1{
     public static void main(String[] args){

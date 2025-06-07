@@ -1,4 +1,4 @@
-package Questao1;
+package Carro;
 
 public class Carro{
 
@@ -27,7 +27,7 @@ public class Carro{
     public float getAceleracao(){return aceleracao;}
     
     public void ligar(){
-        if(ligaDesliga == false){
+        if(!ligaDesliga){
             ligaDesliga = true;
             System.out.print("\nCarro ligado!");
         }else{
@@ -35,7 +35,7 @@ public class Carro{
         }
     }
     public void desligar(){
-        if(ligaDesliga == true){
+        if(ligaDesliga){
             ligaDesliga = false; 
             System.out.println("\nCarro desligado!");
         }else{
