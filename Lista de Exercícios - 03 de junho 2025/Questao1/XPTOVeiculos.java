@@ -12,7 +12,7 @@ public class XPTOVeiculos{
         int i = 0, resp;
         System.out.println("Sistema para registro de carros");
         do{
-            System.out.print("\nHá " + i + " registro(s)! O que deseja fazer?\n\n1. Cadastrar\n2. Alterar\n3. Listar\n4. Encerrar programa\n\nOpção esolhida: "); resp = teclado.nextInt();
+            System.out.print("\nHá " + i + " registro(s)! O que deseja fazer?\n\n1. Cadastrar\n2. Alterar\n3. Listar\n4. Encerrar programa\n\nOpção escolhida: "); resp = teclado.nextInt();
             switch(resp){
                 case 1:
                     if(i==totalCarros){
@@ -50,7 +50,7 @@ public class XPTOVeiculos{
                 case 4:
                     break;
                 default:
-                    System.out.println("Opção inválida! Tente novamente!");
+                    System.out.println("Opção inválida! Tente novamente.");
                     break;
             }
         }while(resp!=4);
