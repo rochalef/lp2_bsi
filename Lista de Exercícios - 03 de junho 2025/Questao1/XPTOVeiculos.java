@@ -3,7 +3,7 @@ package Questao1;
 import java.util.Scanner;
 
 public class XPTOVeiculos{
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         final int totalCarros = 10;
 
