@@ -27,7 +27,7 @@ public class XPTOVeiculos{
                     if(i == 0){
                         System.out.println("´\n\nAinda não há nenhum carro registrado!\n");
                     }else{
-                        System.out.println("Qual deseja alterar?");
+                        System.out.println("O que deseja alterar?");
                         int a;
                         for (a = 0; a < i; a++) {
                             System.out.print("\n" + (a + 1) + ". " + carros[a].getModelo() + "\n");
