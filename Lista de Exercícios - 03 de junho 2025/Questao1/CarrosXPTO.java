@@ -9,35 +9,30 @@ public class CarrosXPTO{
     private String codigo, marca, cor, modelo, tipoCombustivel, basicoCompleto;
     private int anoFab, numPortas, qtdDisp, preco;
 
-//    public CarrosXPTO(String codigo, String marca, String cor, String modelo, String tipoCombustivel, String basicoCompleto, int anoFab, int numPortas, int qtdDisp, int preco){
-//        this.codigo = codigo;
-//        this.marca = marca;
-//        this.cor = cor;
-//        this.modelo = modelo;
-//        this.tipoCombustivel = tipoCombustivel;
-//        this.basicoCompleto = basicoCompleto;
-//        this.anoFab = anoFab;
-//        this.numPortas = numPortas;
-//        this.qtdDisp = qtdDisp;
-//        this.preco = preco;
-//    }
+    public CarrosXPTO(){}
+
+    public String getModelo() {
+        return modelo;
+    }
 
     public void cadastrar(){
         System.out.print("Para o cadastro de um novo carro no sistema, preciso que informe algumas informações com relação ao carro que deseja cadastrar.\n\nMarca: "); this.marca = teclado.nextLine();
-        System.out.print("Modelo: "); this.modelo = teclado.nextLine();
-        System.out.print("Código (4 letra e 4 números): "); this.codigo = teclado.nextLine();
-        System.out.print("Cor: "); this.cor = teclado.nextLine();
-        System.out.print("Tipo de combustível que usa: "); this.tipoCombustivel = teclado.nextLine();
-        System.out.print("Número de portas: "); this.numPortas = teclado.nextInt();
-        System.out.print("Ano de fabricação: "); this.anoFab = teclado.nextInt();
-        System.out.print("Quantidade disponível: "); this.qtdDisp = teclado.nextInt();
-        System.out.print("Preço: "); this.preco = teclado.nextInt();
-        System.out.print("Básico ou completo: "); this.basicoCompleto = teclado.nextLine();
+        System.out.print("Modelo: "); modelo = teclado.nextLine();
+        System.out.print("Código (4 letra e 4 números): "); codigo = teclado.nextLine();
+        System.out.print("Cor: "); cor = teclado.nextLine();
+        System.out.print("Tipo de combustível que usa: "); tipoCombustivel = teclado.nextLine();
+        System.out.print("Número de portas: "); numPortas = teclado.nextInt();
+        System.out.print("Ano de fabricação: "); anoFab = teclado.nextInt();
+        System.out.print("Quantidade disponível: "); qtdDisp = teclado.nextInt();
+        System.out.print("Preço: "); preco = teclado.nextInt();
+        teclado.nextLine();
+        System.out.print("Básico ou completo: "); basicoCompleto = teclado.nextLine();
     }
 
     public void alterar(){
         int resp;
         System.out.print("O que deseja alterar?\n\n1. Marca\n2. Modelo\n3. Código\n4. Cor\n5. Tipo de Combustível\n6. Número de portas\n7. Ano de fabricação\n8. Quantidade disponivel\n9. Preço\n10. Básico ou Completo\n11. Voltar ao menu\n\nOpção escolhida: "); resp = teclado.nextInt();
+        teclado.nextLine();
         switch(resp){
             case 1:
                 System.out.print("\n\nAtualmente: " + marca + "\nDigite a mudança: "); marca = teclado.nextLine();
@@ -80,7 +75,7 @@ public class CarrosXPTO{
     }
 
     public void listar(){
-        System.out.print("Marca: " + marca + "\nModelo: " + modelo + "\nCódigo: " + codigo + "\nCor: " + cor + "\nTipo de Combustível: " + tipoCombustivel + "\nNúmero de portas: " + numPortas + "\nAno de fabricação: " + anoFab + "\nQuantidade disponivel: " + qtdDisp + "\nPreço: " + preco + "\nBásico ou Completo: " + basicoCompleto);
+        System.out.print("\n\nMarca: " + marca + "\nModelo: " + modelo + "\nCódigo: " + codigo + "\nCor: " + cor + "\nTipo de Combustível: " + tipoCombustivel + "\nNúmero de portas: " + numPortas + "\nAno de fabricação: " + anoFab + "\nQuantidade disponivel: " + qtdDisp + "\nPreço: " + preco + "\nBásico ou Completo: " + basicoCompleto);
     }
 
 }
