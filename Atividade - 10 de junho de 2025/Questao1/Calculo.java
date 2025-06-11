@@ -3,8 +3,9 @@ package Questao1;
 public class Calculo{
     private double totalSalario;
 
-    public void calculaSalario(double salarioBase, int horasTrabalhadas) {
+    public double calculaSalario(double salarioBase, int horasTrabalhadas) {
         totalSalario = salarioBase*horasTrabalhadas;
+        return totalSalario;
     }
 
     public double getTotalSalario(){return totalSalario;}

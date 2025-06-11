@@ -18,10 +18,10 @@ public class Funcionario{
     }
 
     public void calculaSalario(){
-        calcSalario.calculaSalario(salarioBase, horasTrabalhadas);
+        salario = calcSalario.calculaSalario(salarioBase, horasTrabalhadas);
     }
 
     public void imprimirDados(){
-        System.out.print("Nome: " + nome + "\nCPF: " + cpf + "\nRG: " +  rg + "\nSalário final: " + totalSalario + "\nSalário base: " + salarioBase + "\nHoras trabalhadas: " + horasTrabalhadas + "\nMatrícula: " + matricula + "\nData de contratação: " + dataContratacao);
+        System.out.print("Nome: " + nome + "\nCPF: " + cpf + "\nRG: " +  rg + "\nSalário final: " + salario + "\nSalário base: " + salarioBase + "\nHoras trabalhadas: " + horasTrabalhadas + "\nMatrícula: " + matricula + "\nData de contratação: " + dataContratacao);
     }
 }
