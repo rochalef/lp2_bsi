@@ -1,4 +1,4 @@
-package Questao1;
+package BibliotecaXPTO;
 
 public class Calculo{
     private double totalSalario;
